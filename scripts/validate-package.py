@@ -21,6 +21,7 @@ REQUIRED_SKILL_FILES = (
     "README.md",
     "AGENTS.md",
     "LICENSE",
+    "NOTICE.md",
     "agents/openai.yaml",
 )
 

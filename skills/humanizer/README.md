@@ -185,7 +185,7 @@ Humanizer follows the sample's rhythm, word choice, punctuation, and deliberate 
 
 ## License
 
-MIT. This repository is a fork/packaging of [blader/humanizer](https://github.com/blader/humanizer), originally by Siqi Chen. See [NOTICE.md](../../NOTICE.md) for source attribution and the Wikipedia CC BY-SA note.
+MIT. This repository is a fork/packaging of [blader/humanizer](https://github.com/blader/humanizer), originally by Siqi Chen. See [NOTICE.md](./NOTICE.md) for source attribution and the Wikipedia CC BY-SA note.
 
 ## Installation
 
