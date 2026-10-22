@@ -21,8 +21,8 @@ agent tools.
   loader at `./skills/humanizer`.
 - `.claude-plugin/marketplace.json` lets users add this repo as a Claude
   marketplace.
-- `skills/humanizer/scripts/validate-package.py` checks package files and shared
-  values.
+- `scripts/validate-package.py` (repository root) checks package files, plugin
+  manifests, and shared values.
 - `tests/test_validate_package.py` tests the validator.
 
 ## Rules for changes
@@ -33,8 +33,7 @@ Keep `SKILL.md` and `README.md` in sync.
 - **Version:** Keep the same version in `SKILL.md` under `metadata.version`, the first README version entry, and `.claude-plugin/plugin.json`. Do not add a top-level `version` field to the skill.
 - **Compatibility:** Keep install and use instructions neutral across agents. Names such as Claude Code, OpenCode, and Codex are examples, not limits.
 - **History:** Add a short README version note for any behavior change or non-obvious fix.
-- **Checks:** Before publishing, run
-  `python3 skills/humanizer/scripts/validate-package.py`,
+- **Checks:** Before publishing, run `python3 scripts/validate-package.py`,
   `python3 -m unittest discover -s tests -v`, `npx skills add . --list`, and
   `claude plugin validate .`.
 

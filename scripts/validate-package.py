@@ -22,7 +22,6 @@ REQUIRED_SKILL_FILES = (
     "AGENTS.md",
     "LICENSE",
     "agents/openai.yaml",
-    "scripts/validate-package.py",
 )
 
 REQUIRED_ROOT_FILES = (
@@ -184,8 +183,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Validate the humanizer package.")
     parser.add_argument(
         "--repo-root",
-        default=str(Path(__file__).resolve().parents[3]),
-        help="Repository root (default: three levels above this script).",
+        default=str(Path(__file__).resolve().parents[1]),
+        help="Repository root (default: the parent of scripts/).",
     )
     parser.add_argument("--json", action="store_true", help="Print a JSON report.")
     args = parser.parse_args(argv)

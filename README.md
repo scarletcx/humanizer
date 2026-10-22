@@ -171,13 +171,13 @@ humanizer/
 ├── .claude-plugin/
 │   ├── plugin.json
 │   └── marketplace.json
+├── scripts/validate-package.py
 ├── skills/humanizer/
 │   ├── SKILL.md
 │   ├── README.md
 │   ├── AGENTS.md
 │   ├── LICENSE
-│   ├── agents/openai.yaml
-│   └── scripts/validate-package.py
+│   └── agents/openai.yaml
 ├── tests/test_validate_package.py
 └── .github/workflows/tests.yml
 ```
@@ -185,7 +185,7 @@ humanizer/
 ## Development
 
 ```bash
-python3 skills/humanizer/scripts/validate-package.py
+python3 scripts/validate-package.py
 python3 -m unittest discover -s tests -v
 ```
 

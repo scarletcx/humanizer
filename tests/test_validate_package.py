@@ -14,7 +14,7 @@ import unittest
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = REPO_ROOT / "skills" / "humanizer" / "scripts" / "validate-package.py"
+SCRIPT = REPO_ROOT / "scripts" / "validate-package.py"
 
 
 class ValidatePackageTests(unittest.TestCase):

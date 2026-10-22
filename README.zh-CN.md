@@ -126,13 +126,13 @@ humanizer/
 ├── .claude-plugin/
 │   ├── plugin.json
 │   └── marketplace.json
+├── scripts/validate-package.py
 ├── skills/humanizer/
 │   ├── SKILL.md
 │   ├── README.md              # 完整 35 条模式表和 before/after
 │   ├── AGENTS.md              # 贡献者维护指南
 │   ├── LICENSE
-│   ├── agents/openai.yaml     # 可选 Codex UI 元数据
-│   └── scripts/validate-package.py
+│   └── agents/openai.yaml     # 可选 Codex UI 元数据
 ├── tests/test_validate_package.py
 └── .github/workflows/tests.yml
 ```
@@ -143,7 +143,7 @@ humanizer/
 ## 开发与校验
 
 ```bash
-python3 skills/humanizer/scripts/validate-package.py
+python3 scripts/validate-package.py
 python3 -m unittest discover -s tests -v
 ```
 
